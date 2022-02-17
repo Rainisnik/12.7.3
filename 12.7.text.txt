@@ -1,0 +1,7 @@
+per_sent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+money = int(input('введите сумму вклада'))
+deposit = [money*per_sent['ТКБ']/100, money*per_sent['СКБ']/100, money*per_sent['ВТБ']/100, money*per_sent['СБЕР']/100]
+print(list(map(int, deposit)))
+max_depozit = max(list(deposit))
+print("Максимальная сумма которую вы можете заработать -", int(max_depozit))
+
